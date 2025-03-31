@@ -2,7 +2,7 @@
 # Create ansible inventory dynamically 
 
 resource "local_file" "ansible_inventory" {
-  filename = "/home/ubuntu/Cluster/k8s.project/ansible/hosts"
+  filename = "/home/ubuntu/Cluster/k8s-project/ansible/hosts"
 
   content = <<EOT
 
@@ -29,7 +29,7 @@ EOT
 
 resource "local_file" "ansible_vars" {
 
-filename = "/home/ubuntu/Cluster/k8s.project/terraform/inventory.tf"
+filename = "/home/ubuntu/Cluster/k8s-project/ansible/cluster_setup/vars/main.yml"
 
 content = <<EOT
 
