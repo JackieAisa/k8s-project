@@ -1,0 +1,18 @@
+
+[master]
+34.226.247.222 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+
+[worker1]
+44.202.112.76 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+
+[worker2]
+52.91.230.131 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+
+[all:children]
+master
+workers
+
+[workers]
+44.202.112.76
+52.91.230.131
+

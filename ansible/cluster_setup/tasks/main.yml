@@ -1,0 +1,5 @@
+- name: Copy file cluster.yml.template.j2
+  ansible.builtin.template:
+    src: /home/ubuntu/Cluster/k8s.project/ansible/cluster_setup/templates/cluster.yml.template.j2
+    dest: /home/ubuntu/cluster.yml 
+    

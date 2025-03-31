@@ -1,0 +1,42 @@
+  - hosts: all
+    become: yes 
+    roles:
+      - install_docker 
+      - rke_role 
+     
+
+  - hosts: localhost
+    roles:
+      - cluster_setup
+      
+      
+ 
+   
+
+  
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
